@@ -525,7 +525,7 @@ func (e *Engine) runBin() error {
 		}
 	}
 
-	e.runnerLog("running..")
+	e.runnerLog("running...")
 	go func() {
 		for {
 			select {
@@ -553,6 +553,9 @@ func (e *Engine) runBin() error {
 			}
 		}
 	}()
+	var ReloadChannel = make(chan bool)
+	ReloadChannel <- true
+
 
 	return nil
 }
