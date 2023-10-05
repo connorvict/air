@@ -1,4 +1,4 @@
-module github.com/cosmtrek/air
+module github.com/connorvict/air
 
 go 1.21
 
