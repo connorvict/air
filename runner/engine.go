@@ -525,7 +525,7 @@ func (e *Engine) runBin() error {
 		}
 	}
 
-	e.runnerLog("running test...")
+	e.runnerLog("running..")
 	go func() {
 		for {
 			select {
