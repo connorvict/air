@@ -556,7 +556,6 @@ func (e *Engine) runBin() error {
 	var ReloadChannel = make(chan bool)
 	ReloadChannel <- true
 
-
 	return nil
 }
 
